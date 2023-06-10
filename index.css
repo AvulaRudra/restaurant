@@ -14,8 +14,6 @@ nav{
     
 }
 nav img{
-  display: flex;
-  justify-content: flex-start;
   height: 12vh;
   width: fit-content;
 }
@@ -258,29 +256,7 @@ footer {
       max-width: 900px;
       margin: 0 auto;
     }
-    .navbar.active{
-      height:200px;
-      align-items:flex-start;
-      justify-content: space-around;
-
-  }
-  .navbar.active{
-    height:200px;
-    align-items:flex-start;
-    justify-content: space-around;
-
-}
-.navlist{
-  display:none;
-}
-.navbar.active .navlist{
-  display:grid;
-  row-gap: 15px;
-}
-.menuicon{
-  display: block;
-  position: absolute;
-  left:15px;
-  top:6px;
-}
-}
+    
+   
+    
+  } 

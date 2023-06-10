@@ -9,11 +9,9 @@
     <title>Restuarant</title>
 </head>
 <body>
+  
     <nav class ="navbar" id="navbar" >
-      <div onclick="openmenu()" class="menuicon">
-        <i class="bi-list"></i>
-      </div>
-      <div class="navprofile" ><img src="./static/logo.png" alt="logo"></div>
+      <img src="./static/logo.png" alt="logo">
       <div class="navlist">
         <a href="#About">About</a>
         <a href="#Menu">Menu</a>
@@ -150,9 +148,11 @@
     <p>&copy; 2023 Restaurant . All rights reserved.</p>
   </footer>
   <script>
-  function openmenu(){   
-    document.getElementById('navbar')?.classList.toggle('active')
-  }
+   
+    function openMenu(){
+        document.getElementById('navv')?.classList.toggle('active')
+    }
+
   document.addEventListener("DOMContentLoaded", function() {
     var chefPhotos = [
       "./static/chef2.jpg",
