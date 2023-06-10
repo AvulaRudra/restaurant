@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <title>Restuarant</title>
+</head>
+<body>
+    <nav class ="navbar" id="navbar" >
+      <div onclick="openmenu()" class="menuicon">
+        <i class="bi-list"></i>
+      </div>
+      <div class="navprofile" ><img src="./static/logo.png" alt="logo"></div>
+      <div class="navlist">
+        <a href="#About">About</a>
+        <a href="#Menu">Menu</a>
+        <a href="#Chef-Note">Chef's Note</a>
+        <a href="#order">Order</a>
+        <a href="#Contact">Contact</a> 
+      </div>
+    </nav>
+    <section>
+        <div class="banner" >
+            <img src="./static/rest2.jpg" alt="Restuarant-img2">
+            <div class="text">Welcome to our restaurant!</div>
+        </div>
+        <h2>About Us</h2>
+        <div class="about" id="About">
+            
+            <!-- <div class="about-img">
+                <img src="./static/kit1.jpg" alt="">
+            </div> -->
+            <div class="about-info">
+                <p>Our passionate chefs create a menu that delights with global flavors and exquisite presentation. We prioritize your experience, ensuring you feel welcome and cared for throughout your visit. Our extensive wine list, expertly curated by sommeliers, complements our dishes perfectly. Sustainability is important to us; we source locally, minimize waste, and support eco-friendly initiatives. Join us for an unforgettable dining adventure, where every bite is a masterpiece and every moment is cherished</p>
+            
+            </div>
+            
+        </div>
+        <h2>Menu</h2>
+        <div class="menu" id="Menu">
+            <div class="menu-item">
+              <img src="./static/food1.jpg" alt="Dish 1">
+              <h3 class="dish-name">Korean Pasta</h3>
+              <p class="dish-description">Handmade pasta with semi boiled egg with seasoned with cilantro.</p>
+              <button class="order-button">Order</button>
+            </div>
+            <div class="menu-item">
+              <img src="./static/food2.jpg" alt="Dish 2">
+              <h3 class="dish-name">Mexican Burrito</h3>
+              <p class="dish-description">Burrito topped with mix of meat and baby corn and wrapped in the original Mexican style .</p>
+              <button class="order-button">Order</button>
+            </div>
+            <div class="menu-item">
+              <img src="./static/food3.jpg" alt="Dish 3">
+              <h3 class="dish-name">Tacos</h3>
+              <p class="dish-description">Tacos topped with chicken and wrapped in the original Mexican style.</p>
+              <button class="order-button">Order</button>
+            </div>
+            <div class="menu-item">
+            <img src="./static/food4.jpg" alt="Dish 1">
+            <h3 class="dish-name">Shrimp</h3>
+            <p class="dish-description"> Smoked Shrimps with the flavours of organic masalas.</p>
+            <button class="order-button">Order</button>
+            </div>
+            <div class="menu-item">
+            <img src="./static/food5.jpg" alt="Dish 2">
+            <h3 class="dish-name">Dish 2</h3>
+            <p class="dish-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="order-button">Order</button>
+            </div>
+            <div class="menu-item">
+            <img src="./static/pancakes.jpg" alt="Dish 3">
+            <h3 class="dish-name">Pancakes</h3>
+            <p class="dish-description">Pancakes topped of with organic honey and berries.</p>
+            <button class="order-button">Order</button>
+            </div>
+            <div class="menu-item">
+            <img src="./static/food2.jpg" alt="Dish 1">
+            <h3 class="dish-name">Dish 1</h3>
+            <p class="dish-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="order-button">Order</button>
+            </div>
+            <div class="menu-item">
+            <img src="./static/food1.jpg" alt="Dish 2">
+            <h3 class="dish-name">Dish 2</h3>
+            <p class="dish-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="order-button">Order</button>
+            </div>
+            <div class="menu-item">
+            <img src="./static/food4.jpg" alt="Dish 3">
+            <h3 class="dish-name">Dish 3</h3>
+            <p class="dish-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            <button class="order-button">Order</button>
+            </div>
+            <!-- Add more menu items as needed -->
+          </div>
+        <h2>Chef's Note</h2>
+        <div class="banner2" id="Chef-Note">
+            <div class="chefInfo">
+              <img class="chefPhoto" src="./static/chef2.jpg" alt="Chef's Photo">
+              <h2 class="chefNote">Try our new seasonal salad!</h2>
+            </div>
+        </div>
+        <div class="order-section" id="order">
+          <h2>Place Your Order</h2>
+          <form id="order-form">
+            <div class="order-option">
+              <label for="dine-in">Dine In</label>
+              <input type="radio" name="order-type" id="dine-in" value="dine-in" required>
+            </div>
+            <div class="order-option">
+              <label for="drive-through">Drive Through</label>
+              <input type="radio" name="order-type" id="drive-through" value="drive-through">
+            </div>
+            <div class="order-option">
+              <label for="delivery">Delivery</label>
+              <input type="radio" name="order-type" id="delivery" value="delivery">
+            </div>
+            <div class="order-option">
+              <label for="time-date">Preferred Time and Date:</label>
+              <input type="datetime-local" id="time-date" name="time-date">
+            </div>
+            <button type="submit">Place Order</button>
+          </form>
+        </div>
+        
+        <h2>Contact Us</h2>
+        <section class="contact" id="Contact">
+          <div class="contact-logo">
+            <img src="./static/logo.png" alt="logo" id=>
+          </div>
+          <div class="social-media-links">
+           
+            <h3>Visit us at:</h3>
+            <p>123 Restaurant Street, City</p>
+            <p>Contact: 123-456-7890</p>
+          
+            <h3>Follow us on social media:</h3>
+            <a href="#"><img src="./static/facebook.png" alt="Facebook"></a>
+            <a href="#"><img src="./static/twitter.png" alt="Twitter"></a>
+            <a href="#"><img src="./static/insta.png" alt="Instagram"></a>
+          </div>
+        </section>
+    
+  </section>
+  <footer>
+    <p>&copy; 2023 Restaurant . All rights reserved.</p>
+  </footer>
+  <script>
+  function openmenu(){   
+    document.getElementById('navbar')?.classList.toggle('active')
+  }
+  document.addEventListener("DOMContentLoaded", function() {
+    var chefPhotos = [
+      "./static/chef2.jpg",
+      "./static/chef1.jpg",
+      "./static/food5.jpg"
+    ];
+  
+    var chefNotes = [
+      "Try our new seasonal salad!",
+      "Indulge in our mouthwatering desserts.",
+      "Discover our chef's special pasta."
+     
+    ];
+  
+    var chefInfoElement = document.querySelector(".chefInfo");
+    var index = 0;
+  
+    function rotateChefInfo() {
+      chefInfoElement.innerHTML = `
+        <img class="chefPhoto" src="${chefPhotos[index]}" alt="Chef's Photo">
+        <h2 class="chefNote">${chefNotes[index]}</h2>
+      `;
+      index = (index + 1) % chefPhotos.length;
+    }
+  
+    rotateChefInfo(); // Display the first chef's photo and note immediately
+  
+    setInterval(rotateChefInfo, 9700); // Rotate every 5 seconds
+  });
+  
+  </script>  
+
+    
+</body>
+</html>
