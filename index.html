@@ -9,18 +9,24 @@
     <title>Restuarant</title>
 </head>
 <body>
-  
-    <nav class ="navbar" id="navbar" >
-      <img src="./static/logo.png" alt="logo">
-      <div class="navlist">
-        <a href="#About">About</a>
-        <a href="#Menu">Menu</a>
-        <a href="#Chef-Note">Chef's Note</a>
-        <a href="#order">Order</a>
-        <a href="#Contact">Contact</a> 
-      </div>
-    </nav>
-    <section>
+  <nav class ="navbar" id="navbar" >
+    <img class="navprofile" src="./static/logo.png" alt="image">
+    <div onclick="openmenu()" class="menuicon">
+      <i class="bi-list"></i>
+    </div>
+    <div class="navlist" >
+      <a href="#About">About</a>
+      <a href="#Menu">Menu</a>
+      <a href="#Chef-Note">Chef's Note </a>
+      <a href="#order">Order</a>
+      <a href="#Contact">Contact</a>
+
+    </div>
+        
+
+
+  </nav>
+  <section>
         <div class="banner" >
             <img src="./static/rest2.jpg" alt="Restuarant-img2">
             <div class="text">Welcome to our restaurant!</div>
@@ -183,7 +189,12 @@
     setInterval(rotateChefInfo, 9700); // Rotate every 5 seconds
   });
   
-  </script>  
+  </script> 
+  <script>
+  function openmenu(){   
+    document.getElementById('navbar')?.classList.toggle('active')
+  }
+</script> 
 
     
 </body>
